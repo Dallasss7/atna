@@ -1,0 +1,659 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  background: #222 url(../images/greyzz-header.png);
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+  font: 16px/26px "proxima-nova", "Helvetica Neue", Helvetica, Arial;
+}
+
+.wrapper {
+  width: 90%; 
+  margin: 0 5%;
+}
+
+h1, h2, h3, h3, h5, h6 {
+  font-weight: 400;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.footer-container {
+  border-top: 2px solid #cab751;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+
+}
+
+.header-container {
+  border-bottom: 1px solid #707070;
+}
+
+.title {
+  color: #cab751;
+  font-weight: 300;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: -0.018em;
+}
+
+.sub-title {
+  color: #777;
+  font-weight: 300;
+  font-size: .7em;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  color: white;
+  background: #181818;
+}
+
+nav a:hover,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+#atna {
+	background: #eaeaea;
+}
+
+.main-container {
+	background-image: url(../images/greyzz.png);
+	background-repeat:repeat;
+  border-top: 2px solid #ddd
+}
+
+.main {
+  min-height: 350px;
+  padding: 30px 0;
+}
+
+.main article h1 {
+  font-size: 2em;
+}
+
+.main aside {
+  color: white;
+  padding: 0px 5% 10px;
+}
+
+.main section.results-list {
+  float: left;
+  margin-bottom: 2em;
+}
+
+.main article.results-list-item {
+  float: left;
+  width: 47%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+
+.main article.results-list-item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.main article.results-list-item header {
+  margin-bottom: 5px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+	font-weight: 600;
+  letter-spacing: -0.0225em;
+}
+
+.main article.results-list-item a:link {
+  color: #777;
+  text-decoration: none;
+}
+
+
+.main article.results-list-item .poster-container {
+  position: relative;
+}
+
+.main article.results-list-item .poster-container .view-trailer {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: background-color 0.35s ease 0s,
+              display 0.35s ease 0s;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 999;
+}
+
+.main article.results-list-item .poster-container:hover .view-trailer {
+  display: block;
+}
+
+.main article.results-list-item .poster-container .view-trailer:hover {
+  background-color: rgba(202, 183, 81, .8);
+}
+
+.main article.results-list-item .poster-container .view-trailer span {
+  display: block;
+  margin: 62% 10px 0px 10px;
+  font-size: 1em;
+  font-weight: 500;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.footer-container footer {
+  color: white;
+  padding: 20px 0;
+}
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+select {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-color: #CDCDCD; /* fallback color if gradients are not supported */
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 3px solid #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.select-year-hero {
+	background: #efefef;
+	padding: 50px 0 30px 0;
+}
+
+
+.select-year-hero {
+  width: 100%;
+  height: 100%;
+  background-color: #cab751;
+  background-image: linear-gradient(to bottom right, #cab751, #c8c4ae);
+}
+
+
+.select-year {
+  min-height: 130px;
+}
+
+.select-year header {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: -0.0325em;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+section.select-year {
+  text-align: center;
+}
+
+.select-year .customSelect {
+  text-align: left;
+  width: 280px;
+  background-color: white;
+  padding: 6px 10px;
+  border: 2px solid #ddd;
+  background: url(../images/select-box-bg.gif?ver=3) right center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  -moz-box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.select-year .customSelect.customSelectHover {
+  border-color: #ccc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+}
+
+.select-year .customSelect.customSelectFocus {
+  border-color: #ccc;
+}
+
+.select-year .customSelect.customSelectOpen {
+  border-color: #ccc;
+  background: url(../images/select-box-bg-on.gif?ver=3) right center;
+  background-repeat: no-repeat;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+  nav a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+  nav ul li {
+    display: inline;
+  }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+
+  .main article.results-list-item {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  .main article.results-list-item:nth-child(2n+2) {
+    margin-right: 5%;
+  }
+
+  .main article.results-list-item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+  .header-container,
+  .main aside {
+
+  }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  .main article.results-list-item {
+    float: left;
+    width: 23.125%;
+    margin-right: 2.5%;
+  }
+
+  .main article.results-list-item:nth-child(3n+3), .main article.results-list-item:nth-child(2n+2) {
+    margin-right: 2.5%;
+  }
+
+  .main article.results-list-item:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 62% 10px 0px 10px;
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+  .wrapper {
+    width: 1026px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+
+  .main article.results-list-item {
+    float: left;
+    width: 240px;
+  }
+
+  .main article.results-list-item:nth-child(4n+4), .main article.results-list-item:nth-child(3n+3), .main article.results-list-item:nth-child(2n+2), .main article.results-list-item:nth-child(1n+1)  {
+    margin-right: 15px;
+  }
+
+  .main article.results-list-item:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .main article.results-list-item .poster-container {
+    position: relative;
+    width: 240px;
+    height: 361px;
+  }
+
+  .poster-container img.thumbnail {
+    height: 100%;
+  }
+
+  .main article.results-list-item .poster-container .view-trailer span {
+    margin: 70% 10px 0px 10px;
+    font-size: 1.2em;
+  }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+img,video { 
+  max-width: 100%; height: auto; 
+}
+
+img.thumbnail { 
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.25),transparent 0 0 0,transparent 0 0 0;
+  box-sizing: border-box;
+}
+
+img.winner {
+  border-color: gold;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
